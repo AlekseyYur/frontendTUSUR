@@ -1,28 +1,18 @@
-.reserve {
-	display: grid;
-	gap: 65px 11%;
-	grid-template-columns: 405px calc(89% - 405px);
-	grid-template-areas: 
-		"checks scheme"
-		"order legend"; 
-	width: 100%;
+.section-title{
+    .width_624();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 62px;
+    margin: 0 auto 150px;
+    padding: 8px 45px;
+    background-color:@black;
+    color:@white;
+    font-family: @font2;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.227;
+    text-align: center;
+    text-transform: uppercase;
 
-	&__checks {
-			grid-area: checks;
-	}
-
-	&__order {
-			grid-area: order;
-	}
-
-	&__scheme {
-			grid-area: scheme;
-	}
-
-	& > div {
-			box-sizing: border-box;
-			padding: 10px;
-			background-color: coral;
-			text-align: center;
-	}
 }
